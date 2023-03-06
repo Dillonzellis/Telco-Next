@@ -1,4 +1,4 @@
-import { Bitter, Montserrat } from "@next/font/google";
+import { Bitter, Montserrat } from "next/font/google";
 import Header from "./components/header/Header";
 import "./globals.css";
 

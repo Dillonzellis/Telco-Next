@@ -1,7 +1,9 @@
 function NavItem({ itemName }: { itemName: string }) {
   return (
     <>
-      <li className="font-sans text-brandingBlue-400">{itemName}</li>
+      <li className="text-lg font-bold text-brandingBlue-400">
+        {itemName}
+      </li>
     </>
   );
 }

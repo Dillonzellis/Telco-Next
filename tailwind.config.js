@@ -9,7 +9,10 @@ module.exports = {
         brandingBlue: {
           400: "rgb(0, 101, 163)",
         },
+        brandingGreen: {
+          400: "rgb(115, 168, 0)",
       },
+    },
       fontFamily: {
         sans: ["var(--mont-font)", ...fontFamily.sans],
         serif: ["var(--bitter-font)", ...fontFamily.serif],

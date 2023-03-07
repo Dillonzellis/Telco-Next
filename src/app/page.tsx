@@ -1,16 +1,17 @@
+import Container from "./components/util/Container";
 import PrimaryHeading from "./components/util/PrimaryHeading";
 
 export default function Home() {
   return (
     <main>
-      <section className="mb-4 bg-brandingBlue-400 text-white">
-        <div className="container mx-auto space-y-4 py-6">
+      <section className="mb-4 bg-brandingBlue-400 py-6 text-white">
+        <Container className="space-y-4">
           <PrimaryHeading headingText="Telco Plus" />
           <p className="">Telco Plus is a great company</p>
-        </div>
+        </Container>
       </section>
-      <section className="">
-        <div className="container mx-auto py-6">
+      <section className="py-6">
+        <Container className="space-y-2">
           <h2 className="text-2xl font-bold">
             Choose the Right Checking
           </h2>
@@ -23,7 +24,7 @@ export default function Home() {
             plus free bill payment services or paperless statements.
             Click below to learn more about our checking accounts.
           </p>
-        </div>
+        </Container>
       </section>
     </main>
   );

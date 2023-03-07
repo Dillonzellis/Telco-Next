@@ -1,4 +1,4 @@
-import { Bitter, Montserrat } from "next/font/google";
+import { Crimson_Pro, Montserrat } from "next/font/google";
 import Header from "./components/header/Header";
 import "./globals.css";
 
@@ -12,8 +12,8 @@ const mont = Montserrat({
   subsets: ["latin"],
 });
 
-const bitter = Bitter({
-  variable: "--bitter-font",
+const crimson = Crimson_Pro({
+  variable: "--crimson-font",
   subsets: ["latin"],
 });
 
@@ -23,7 +23,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${mont.variable} ${bitter.variable}`}>
+    <html
+      lang="en"
+      className={`${mont.variable} ${crimson.variable}`}
+    >
       <body>
         <Header />
         {children}

@@ -14,7 +14,7 @@ function NavBar() {
         <NavItem itemName="Self Services" />
         <NavItem itemName="About" />
       </ul>
-      <Button btnText="Apply Now" />
+      <Button btnText="Apply Now" btnSrc="#" />
     </nav>
   );
 }

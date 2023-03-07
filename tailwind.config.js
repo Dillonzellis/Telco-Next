@@ -11,11 +11,11 @@ module.exports = {
         },
         brandingGreen: {
           400: "rgb(115, 168, 0)",
+        },
       },
-    },
       fontFamily: {
         sans: ["var(--mont-font)", ...fontFamily.sans],
-        serif: ["var(--bitter-font)", ...fontFamily.serif],
+        serif: ["var(--crimson-font)", ...fontFamily.serif],
       },
     },
   },

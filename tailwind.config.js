@@ -12,6 +12,9 @@ module.exports = {
         brandingGreen: {
           400: "rgb(115, 168, 0)",
         },
+        brandingGrey: {
+          700: "rgb(64, 64, 64)",
+        },
       },
       fontFamily: {
         sans: ["var(--mont-font)", ...fontFamily.sans],

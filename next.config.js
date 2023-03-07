@@ -8,7 +8,7 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "dev3.growthbydesign.org",
-        pathname: "wp-content/uploads/**/*",
+        // pathname: "wp-content/uploads/**/*",
       },
     ],
   },

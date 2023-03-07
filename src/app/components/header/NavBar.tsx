@@ -10,7 +10,6 @@ function NavBar() {
       <Link href="/">
         <Image className="" src={logo} alt="telcoplus logo" />
       </Link>
-
       <ul className="flex flex-1 justify-around">
         <NavItem itemName="Mortgage" linkHref="/" />
         <NavItem itemName="Banking" linkHref="/checking" />

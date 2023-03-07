@@ -11,7 +11,7 @@ function Button({
 }) {
   // add conditional logic for internal client-side routing using Link
   return (
-    <div className="rounded-lg bg-brandingGreen-400 px-2 py-2 text-lg font-bold capitalize text-white shadow-md">
+    <div className="max-w-fit rounded-xl bg-brandingGreen-400 px-3 py-2 text-center text-lg font-bold capitalize text-white shadow-md">
       {nextLink ? (
         <a href={btnSrc}>{btnText}</a>
       ) : (

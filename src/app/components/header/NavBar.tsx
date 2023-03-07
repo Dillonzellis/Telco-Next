@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "public/logo.png";
 import Button from "../util/Button";
 import NavItem from "./NavItem";
@@ -6,13 +7,16 @@ import NavItem from "./NavItem";
 function NavBar() {
   return (
     <nav className="flex items-center justify-between py-4">
-      <Image className="" src={logo} alt="telcoplus logo" />
+      <Link href="/">
+        <Image className="" src={logo} alt="telcoplus logo" />
+      </Link>
+
       <ul className="flex flex-1 justify-around">
-        <NavItem itemName="Mortgage" />
-        <NavItem itemName="Banking" />
-        <NavItem itemName="Lending" />
-        <NavItem itemName="Self Services" />
-        <NavItem itemName="About" />
+        <NavItem itemName="Mortgage" linkHref="/" />
+        <NavItem itemName="Banking" linkHref="/checking" />
+        <NavItem itemName="Lending" linkHref="/" />
+        <NavItem itemName="Self Services" linkHref="/" />
+        <NavItem itemName="About" linkHref="/" />
       </ul>
       <Button btnText="Apply Now" btnSrc="#" />
     </nav>

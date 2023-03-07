@@ -1,8 +1,18 @@
-function NavItem({ itemName }: { itemName: string }) {
+"use client";
+
+import Link from "next/link";
+
+function NavItem({
+  itemName,
+  linkHref,
+}: {
+  itemName: string;
+  linkHref: string;
+}) {
   return (
     <>
       <li className="text-lg font-bold text-brandingBlue-400">
-        {itemName}
+        <Link href={linkHref}>{itemName}</Link>
       </li>
     </>
   );

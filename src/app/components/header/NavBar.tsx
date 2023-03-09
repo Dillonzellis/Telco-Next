@@ -14,7 +14,7 @@ function NavBar() {
         <NavItem itemName="Mortgage" linkHref="/" />
         <NavItem itemName="Banking" linkHref="/checking" />
         <NavItem itemName="Lending" linkHref="/" />
-        <NavItem itemName="Self Services" linkHref="/" />
+        <NavItem itemName="Self Services" linkHref="/for-sale" />
         <NavItem itemName="About" linkHref="/" />
       </ul>
       <Button btnText="Apply Now" btnSrc="#" />

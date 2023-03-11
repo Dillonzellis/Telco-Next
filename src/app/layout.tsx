@@ -23,10 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${mont.variable} ${crimson.variable}`}
-    >
+    <html lang="en" className={`${mont.variable} ${crimson.variable}`}>
       <body>
         <Header />
         {children}

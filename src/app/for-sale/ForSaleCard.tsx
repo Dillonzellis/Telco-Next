@@ -1,50 +1,77 @@
 import Image from "next/image";
-import React from "react";
-
+import { Url } from "url";
 import CarIcon from "../../../public/car.svg";
 import MilageIcon from "../../../public/mileage.svg";
 import PaintIcon from "../../../public/paintbrush.svg";
 import CardAttribute from "./CardAttribute";
 
-function ForSaleCard() {
+function ForSaleCard({
+  shadowDirection,
+  imgSrc,
+  imgAlt,
+  title,
+  engineText,
+  mileageText,
+  carColor,
+  startingPrice,
+  buyPrice,
+}: {
+  shadowDirection: string;
+  imgSrc: string;
+  imgAlt: string;
+  title: string;
+  engineText: string;
+  mileageText: string;
+  carColor: string;
+  startingPrice: string;
+  buyPrice: string;
+}) {
+  if (shadowDirection === "left") {
+    shadowDirection = "hero-shadow-left";
+  } else if (shadowDirection === "right") {
+    shadowDirection = "hero-shadow-right";
+  } else if (shadowDirection === "middle") {
+    shadowDirection = "repo-shadow";
+  }
+
   return (
-    <div className="">
+    <div className={`${shadowDirection} rounded-sm`}>
       <Image
-        className="w-full"
-        src="https://dev3.growthbydesign.org/wp-content/uploads/2023/03/2013-dodge-chall-1.jpg"
-        alt="Picture of the author"
+        className="w-full rounded-t-sm"
+        src={imgSrc}
+        alt={imgAlt}
         width={430}
         height={290}
       />
       <div className="py-2 text-center text-lg font-bold text-brandingBlue-400">
-        2013 Dodge Challenger 2D SXT
+        {title}
       </div>
-      <div className="grid-cols-85-1 grid border-t-2 py-3">
-        <div className="grid gap-y-2 border-r-2 px-4">
-          <CardAttribute
-            image={CarIcon}
-            alt={"car icon"}
-            text={"Dodge Challenger 2D SXT"}
-          />
+      <div className="grid-cols-85-1 grid border-t bg-auxBlue-100 py-3">
+        <div className="grid gap-y-2 border-r border-tertBlue-100/20 px-4">
+          <CardAttribute image={CarIcon} alt={"car icon"} text={engineText} />
           <CardAttribute
             image={MilageIcon}
             alt={"speedometer icon"}
-            text={"148,424 miles"}
+            text={`${mileageText} Miles`}
           />
           <CardAttribute
             image={PaintIcon}
             alt={"paintbrush icon"}
-            text={"White Exterior"}
+            text={carColor}
           />
         </div>
         <div className="grid gap-y-2 px-4">
           <div className="grid items-center">
-            <div className="text-xs">Starting At</div>
-            <div className="text-5xl font-bold">$7,995</div>
+            <div className="text-xs text-auxBlue-600">Starting At</div>
+            <div className="text-5xl font-bold text-auxBlue-800">
+              ${startingPrice}
+            </div>
           </div>
           <div className="grid items-center">
-            <div className="text-xs">Buy Now</div>
-            <div className="text-3xl font-semibold">$9,995</div>
+            <div className="text-xs text-auxBlue-600">Buy Now</div>
+            <div className="text-3xl font-semibold text-auxBlue-800">
+              ${buyPrice}
+            </div>
           </div>
         </div>
       </div>

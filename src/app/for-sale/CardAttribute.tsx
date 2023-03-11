@@ -12,7 +12,7 @@ function CardAttribute({
   return (
     <div className="flex items-center gap-x-6">
       <Image src={image} alt={alt} />
-      <div className="text-sm">{text}</div>
+      <div className="text-sm text-auxBlue-600">{text}</div>
     </div>
   );
 }

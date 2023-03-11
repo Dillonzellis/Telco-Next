@@ -1,8 +1,6 @@
 import Image from "next/image";
 import heroImg from "public/home-hero.jpg";
 import Button from "./components/util/Button";
-import HeroSubHeading from "./components/util/headings/HeroSubHeading";
-import PrimaryHeading from "./components/util/headings/PrimaryHeading";
 import Container from "./components/util/layout/Container";
 
 export default function Home() {
@@ -28,7 +26,7 @@ export default function Home() {
           <Image
             className="mx-auto border-r-4 border-l-4"
             src={heroImg}
-            alt=""
+            alt="hero img"
             width={1920}
             height={500}
           />
@@ -41,13 +39,13 @@ export default function Home() {
             Choose the Right Checking
           </h2>
           <p className="">
-            A checking account with Telco Plus Credit Union gives you
-            the freedom to bank how you need. Our services like online
-            banking, direct deposit, and free bill pay make it easy to
-            stay on top of your finances. You can also enjoy account
-            alerts for low balances and daily direct deposit deposits,
-            plus free bill payment services or paperless statements.
-            Click below to learn more about our checking accounts.
+            A checking account with Telco Plus Credit Union gives you the
+            freedom to bank how you need. Our services like online banking,
+            direct deposit, and free bill pay make it easy to stay on top of
+            your finances. You can also enjoy account alerts for low balances
+            and daily direct deposit deposits, plus free bill payment services
+            or paperless statements. Click below to learn more about our
+            checking accounts.
           </p>
           <Button btnText="Learn More" btnSrc="#" />
         </Container>

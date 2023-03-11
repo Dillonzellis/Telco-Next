@@ -4,8 +4,7 @@ import PrimaryHeading from "../components/util/headings/PrimaryHeading";
 import Container from "../components/util/layout/Container";
 import InnerHero from "../components/util/layout/InnerHero";
 import ForSaleCard from "./ForSaleCard";
-
-import { cad12, challenger } from "./repoData";
+import ForSaleCardDeck from "./ForSaleCardDeck";
 
 function page() {
   return (
@@ -37,30 +36,8 @@ function page() {
               ad posted here.
             </p>
           </div>
-          <div className="grid gap-x-8 md:grid-cols-2 xl:grid-cols-3">
-            <ForSaleCard
-              shadowDirection="left"
-              imgSrc={challenger.imgSrc}
-              imgAlt={challenger.imgAlt}
-              title={challenger.title}
-              engineText={challenger.engineText}
-              mileageText={challenger.mileageText}
-              carColor={challenger.carColor}
-              startingPrice={challenger.startingPrice}
-              buyPrice={challenger.buyPrice}
-            />
-            <ForSaleCard
-              shadowDirection="middle"
-              imgSrc={cad12.imgSrc}
-              imgAlt={cad12.imgAlt}
-              title={cad12.title}
-              engineText={cad12.engineText}
-              mileageText={cad12.mileageText}
-              carColor={cad12.carColor}
-              startingPrice={cad12.startingPrice}
-              buyPrice={cad12.buyPrice}
-            />
-          </div>
+
+          <ForSaleCardDeck />
         </Container>
       </section>
 

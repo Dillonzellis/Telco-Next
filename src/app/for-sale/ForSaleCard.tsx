@@ -4,6 +4,7 @@ import CarIcon from "../../../public/car.svg";
 import MilageIcon from "../../../public/mileage.svg";
 import PaintIcon from "../../../public/paintbrush.svg";
 import CardAttribute from "./CardAttribute";
+import PricingCol from "./PricingCol";
 
 function ForSaleCard({
   shadowDirection,
@@ -35,7 +36,7 @@ function ForSaleCard({
   }
 
   return (
-    <div className={`${shadowDirection} rounded-sm`}>
+    <div className={`${shadowDirection} h-fit rounded-sm`}>
       <Image
         className="w-full rounded-t-sm"
         src={imgSrc}
@@ -61,18 +62,7 @@ function ForSaleCard({
           />
         </div>
         <div className="grid gap-y-2 px-4">
-          <div className="grid items-center">
-            <div className="text-xs text-auxBlue-600">Starting At</div>
-            <div className="text-5xl font-bold text-auxBlue-800">
-              ${startingPrice}
-            </div>
-          </div>
-          <div className="grid items-center">
-            <div className="text-xs text-auxBlue-600">Buy Now</div>
-            <div className="text-3xl font-semibold text-auxBlue-800">
-              ${buyPrice}
-            </div>
-          </div>
+          <PricingCol startingPrice={startingPrice} buyPrice={buyPrice} />
         </div>
       </div>
     </div>

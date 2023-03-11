@@ -10,8 +10,8 @@ function CardAttribute({
   text: string;
 }) {
   return (
-    <div className="flex items-center gap-x-6">
-      <Image src={image} alt={alt} />
+    <div className="flex items-center gap-x-3">
+      <Image src={image} alt={alt} width={37} />
       <div className="text-sm text-auxBlue-600">{text}</div>
     </div>
   );

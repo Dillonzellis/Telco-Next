@@ -6,7 +6,7 @@ import NavItem from "./NavItem";
 
 function NavBar() {
   return (
-    <nav className=" hidden items-center justify-between py-4 md:flex">
+    <nav className="hidden items-center justify-between py-4 md:flex">
       <Link href="/">
         <Image className="" src={logo} alt="telcoplus logo" />
       </Link>

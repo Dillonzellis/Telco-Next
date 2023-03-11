@@ -35,7 +35,7 @@ function page() {
               ad posted here.
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-x-8">
+          <div className="grid gap-x-8 md:grid-cols-2 xl:grid-cols-3">
             <ForSaleCard />
             <ForSaleCard />
             <ForSaleCard />

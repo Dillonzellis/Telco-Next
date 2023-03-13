@@ -36,7 +36,7 @@ function Footer() {
 
       <section className="bg-brandingGrey-700 py-6 text-white">
         <Container className="space-y-6">
-          <ul className="flex items-center justify-around">
+          <ul className="flex flex-col items-center justify-around gap-x-3 gap-y-6 md:flex-row">
             <li>
               <Link href="/">
                 <Image
@@ -47,17 +47,17 @@ function Footer() {
                 />
               </Link>
             </li>
-            <li className="text-lg font-bold">
+            <li className="font-bold lg:text-lg">
               <a href="#">Privacy Policy</a>
             </li>
-            <li className="text-lg font-bold">
+            <li className="font-bold lg:text-lg">
               <a href="#">Terms & Disclosures</a>
             </li>
-            <li className="text-lg font-bold">
+            <li className="font-bold lg:text-lg">
               <a href="#">Compliant Notice</a>
             </li>
           </ul>
-          <div className="flex items-center justify-center space-x-12">
+          <div className="flex flex-col items-center justify-center space-y-6 md:flex-row md:space-x-12">
             <Image
               src="https://dev3.growthbydesign.org/wp-content/uploads/2022/11/ncua-logo.png"
               alt="ncua logo"
@@ -77,12 +77,12 @@ function Footer() {
               height={58}
             />
           </div>
-          <div className="flex flex-col items-center justify-center space-x-2 text-sm">
-            <div className="flex font-bold">
+          <div className="flex flex-col items-center justify-center gap-y-1 text-sm">
+            <div className="flex gap-x-4 font-bold">
               <div>NMLS ID #736037</div>
               <div>NUMBER #311985791</div>
             </div>
-            <div className="">
+            <div className="text-center">
               Copyright © {currentYear} Telco Plus Credit Union. Federally
               Insured By NCUA.
             </div>

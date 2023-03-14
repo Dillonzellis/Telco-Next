@@ -11,8 +11,8 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <>
-      <section>
+    <footer>
+      <div>
         <div className="flex flex-col items-center gap-4 bg-brandingBlue-400 py-6 text-white">
           <div className="font-serif text-4xl font-semibold">Contact Us</div>
           <div className="flex gap-4 font-semibold">
@@ -32,9 +32,9 @@ function Footer() {
             </a>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section className="bg-brandingGrey-700 py-6 text-white">
+      <div className="bg-brandingGrey-700 py-6 text-white">
         <Container className="space-y-6">
           <ul className="flex flex-col items-center justify-around gap-x-3 gap-y-6 md:flex-row">
             <li>
@@ -88,8 +88,8 @@ function Footer() {
             </div>
           </div>
         </Container>
-      </section>
-    </>
+      </div>
+    </footer>
   );
 }
 

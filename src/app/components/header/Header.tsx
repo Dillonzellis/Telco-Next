@@ -4,7 +4,7 @@ import TopNav from "./TopNav";
 function Header() {
   return (
     <header className="container mx-auto py-4">
-      <TopNav />
+      {/* <TopNav /> */}
       <NavBar />
     </header>
   );

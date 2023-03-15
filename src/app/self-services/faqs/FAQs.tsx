@@ -1,8 +1,7 @@
-import Image from "next/image";
-import HeroSubHeading from "../components/util/headings/HeroSubHeading";
-import PrimaryHeading from "../components/util/headings/PrimaryHeading";
-import Container from "../components/util/layout/Container";
-import InnerHero from "../components/util/layout/InnerHero";
+import HeroSubHeading from "../../components/util/headings/HeroSubHeading";
+import PrimaryHeading from "../../components/util/headings/PrimaryHeading";
+import Container from "../../components/util/layout/Container";
+import InnerHero from "../../components/util/layout/InnerHero";
 
 import { generalQuestions, loanQuestions } from "./data/questions";
 

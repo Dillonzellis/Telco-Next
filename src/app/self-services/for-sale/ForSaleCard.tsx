@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Url } from "url";
-import CarIcon from "../../../public/car.svg";
-import MilageIcon from "../../../public/mileage.svg";
-import PaintIcon from "../../../public/paintbrush.svg";
+
+import CarIcon from "public/car.svg";
+import MilageIcon from "public/mileage.svg";
+import PaintIcon from "public/paintbrush.svg";
 import CardAttribute from "./CardAttribute";
 import PricingCol from "./PricingCol";
 

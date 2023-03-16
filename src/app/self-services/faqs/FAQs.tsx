@@ -11,14 +11,14 @@ function FAQs() {
 
   const generalQuestionsItems = generalItems.map((obj, index) => (
     <div className="mb-8 flex flex-col gap-y-2" key={index}>
-      <div className="text-lg font-semibold">{obj.question}</div>
+      <h3 className="text-lg font-semibold">{obj.question}</h3>
       <p className="">- {obj.answer}</p>
     </div>
   ));
 
   const loanQuestionsItems = loanItems.map((obj, index) => (
     <div className="mb-8 flex flex-col gap-y-2" key={index}>
-      <div className="text-lg font-semibold">{obj.question}</div>
+      <h3 className="text-lg font-semibold">{obj.question}</h3>
       <p className="">- {obj.answer}</p>
     </div>
   ));

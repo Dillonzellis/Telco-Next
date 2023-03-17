@@ -1,9 +1,18 @@
 import React from "react";
+import CancelBtn from "./CancelBtn";
 import ModalBtn from "./ModalBtn";
 
-function Modal() {
+function Modal({
+  modalName,
+  modalNum,
+  btnLink,
+}: {
+  modalName: string;
+  modalNum: string;
+  btnLink: string;
+}) {
   return (
-    <div className="max-w-[662px] border-2 ">
+    <div className={`${modalName} max-w-[662px]`}>
       <div className="px-3 py-4 md:px-12 md:py-10">
         <div className="pb-4 text-xl font-bold">Important Message</div>
         <p>
@@ -18,16 +27,9 @@ function Modal() {
         </p>
       </div>
       <div className="bg-auxBlue-100">
-        <div className="flex flex-col gap-y-2 gap-x-4 px-12 py-6 md:flex-row">
-          <ModalBtn
-            btnText="Cancel"
-            className="border-2 border-brandingBlue-400 bg-white text-brandingBlue-400"
-          />
-          <ModalBtn
-            btnText="Continue"
-            className="bg-brandingBlue-400 text-white
-          "
-          />
+        <div className="flex cursor-pointer flex-col gap-y-2 gap-x-4 px-12 py-6 md:flex-row">
+          <CancelBtn modalNum={modalNum} />
+          <ModalBtn btnLink={btnLink} />
         </div>
       </div>
     </div>

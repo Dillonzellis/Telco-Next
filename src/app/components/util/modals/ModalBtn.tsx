@@ -11,7 +11,7 @@ function ModalBtn({
     <div>
       <a
         href="#"
-        className={`${className} block rounded-md border-2 border-brandingBlue-400 px-12 py-2 font-bold`}
+        className={`${className} block rounded-md border-2 border-brandingBlue-400 px-12 py-2 text-center font-bold`}
       >
         {btnText}
       </a>

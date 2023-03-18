@@ -18,7 +18,12 @@ function MobileNav() {
   }
 
   const navItemsList = navItems.map((obj, index) => (
-    <NavItem key={index} itemName={obj.itemName} linkHref={obj.linkHref} />
+    <NavItem
+      key={index}
+      className="text-white"
+      itemName={obj.itemName}
+      linkHref={obj.linkHref}
+    />
   ));
 
   return (
@@ -27,11 +32,16 @@ function MobileNav() {
     //     isOpen ? "flex-col" : ""
     //   }`}
     // >
-    <div className={`flex items-center justify-between py-4 md:hidden`}>
+    <div
+      className={`flex items-center justify-between py-4 md:hidden`}
+    >
       <Link href="/">
         <Image className="" src={logo} alt="telcoplus logo" />
       </Link>
-      <button aria-label="Toggle Navigation Menu" onClick={toggleMenu}>
+      <button
+        aria-label="Toggle Navigation Menu"
+        onClick={toggleMenu}
+      >
         {isOpen ? (
           <XMarkIcon className="h-10 w-10 text-brandingBlue-400" />
         ) : (
@@ -39,7 +49,7 @@ function MobileNav() {
         )}
       </button>
       <ul
-        className={`flex-1 flex-col justify-around gap-y-4 lg:flex-row ${
+        className={`fixed top-28 right-0 z-10 h-screen w-full flex-col items-center gap-y-8 bg-brandingBlue-400 pt-8 ${
           isOpen ? "flex" : "hidden"
         }`}
       >

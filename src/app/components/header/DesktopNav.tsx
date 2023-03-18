@@ -7,7 +7,12 @@ import NavItem from "./NavItem";
 
 function DesktopNav() {
   const navItemsList = navItems.map((obj, index) => (
-    <NavItem key={index} itemName={obj.itemName} linkHref={obj.linkHref} />
+    <NavItem
+      key={index}
+      className="text-brandingBlue-400"
+      itemName={obj.itemName}
+      linkHref={obj.linkHref}
+    />
   ));
   return (
     <>

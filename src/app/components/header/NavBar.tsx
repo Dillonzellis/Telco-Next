@@ -7,8 +7,8 @@ function NavBar() {
   return (
     <nav>
       <Container>
-        <DesktopNav />
         <MobileNav />
+        <DesktopNav />
       </Container>
     </nav>
   );

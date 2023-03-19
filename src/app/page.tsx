@@ -48,7 +48,7 @@ export default function Home() {
             Click below to learn more about our checking accounts.
           </p>
           <Button btnText="Learn More" btnSrc="#" />
-          <div className="text-9xl">SOMETHING NEW</div>
+          <div className="text-9xl">NEW NEW DAWG</div>
         </Container>
       </section>
     </main>

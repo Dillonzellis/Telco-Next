@@ -77,12 +77,12 @@ function Footer() {
               height={58}
             />
           </div>
-          <div className="flex flex-col items-center justify-center gap-y-1 text-sm">
+          <div className="flex flex-col items-center justify-center gap-y-1 text-center text-sm">
             <div className="flex gap-x-4 font-bold">
               <div>NMLS ID #736037</div>
               <div>NUMBER #311985791</div>
             </div>
-            <div className="text-center">
+            <div className="">
               Copyright © {currentYear} Telco Plus Credit Union. Federally
               Insured By NCUA.
             </div>

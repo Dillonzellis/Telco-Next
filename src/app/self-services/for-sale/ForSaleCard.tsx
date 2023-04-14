@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Url } from "url";
-import CarIcon from "../../../public/car.svg";
-import MilageIcon from "../../../public/mileage.svg";
-import PaintIcon from "../../../public/paintbrush.svg";
+
+import CarIcon from "public/car.svg";
+import MilageIcon from "public/mileage.svg";
+import PaintIcon from "public/paintbrush.svg";
 import CardAttribute from "./CardAttribute";
 import PricingCol from "./PricingCol";
 
@@ -47,7 +47,7 @@ function ForSaleCard({
       <div className="py-2 text-center text-lg font-bold text-brandingBlue-400">
         {title}
       </div>
-      <div className="grid-cols-85-1 grid border-t bg-auxBlue-100 py-3">
+      <div className="grid-cols-85-1 order-2 grid border-t bg-auxBlue-100 py-3 sm:order-1">
         <div className="grid gap-y-2 border-r border-tertBlue-100/20 px-4">
           <CardAttribute image={CarIcon} alt={"car icon"} text={engineText} />
           <CardAttribute
@@ -61,7 +61,7 @@ function ForSaleCard({
             text={carColor}
           />
         </div>
-        <div className="grid gap-y-2 px-4">
+        <div className="order-1 flex flex-wrap items-center gap-x-4 px-4 sm:order-2 md:grid md:gap-y-2">
           <PricingCol startingPrice={startingPrice} buyPrice={buyPrice} />
         </div>
       </div>

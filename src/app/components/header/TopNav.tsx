@@ -2,7 +2,7 @@ import { MagnifyingGlassCircleIcon } from "@heroicons/react/24/solid";
 
 function TopNav() {
   return (
-    <div className="flex items-center justify-end space-x-2">
+    <div className="flex flex-col items-end justify-end sm:flex-row sm:items-center sm:space-x-2">
       <div className="text-sm font-bold text-brandingBlue-400">
         Routing Number: 311985791
       </div>

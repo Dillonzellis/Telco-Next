@@ -10,16 +10,20 @@ function FAQs() {
   const { item: loanItems } = loanQuestions;
 
   const generalQuestionsItems = generalItems.map((obj, index) => (
-    <div className="mb-8 flex flex-col gap-y-2" key={index}>
-      <h3 className="text-lg font-semibold">{obj.question}</h3>
-      <p className="">- {obj.answer}</p>
+    <div className="card-de" key={index}>
+      <div className="gap-y-075 lg-gap-y-6 flex flex-col">
+        <h3 className="text-lg font-semibold">{obj.question}</h3>
+        <p className="">{obj.answer}</p>
+      </div>
     </div>
   ));
 
   const loanQuestionsItems = loanItems.map((obj, index) => (
-    <div className="mb-8 flex flex-col gap-y-2" key={index}>
-      <h3 className="text-lg font-semibold">{obj.question}</h3>
-      <p className="">- {obj.answer}</p>
+    <div className="card-de" key={index}>
+      <div className="gap-y-075 lg-gap-y-6 flex flex-col">
+        <h3 className="text-lg font-semibold">{obj.question}</h3>
+        <p className="">{obj.answer}</p>
+      </div>
     </div>
   ));
 
@@ -32,9 +36,13 @@ function FAQs() {
       <section>
         <Container>
           <h2 className="mb-4 text-3xl font-bold">General Questions</h2>
-          <div className="mb-8 max-w-5xl">{generalQuestionsItems}</div>
+          <div className="mb-8 max-w-5xl">
+            <div className="">{generalQuestionsItems}</div>
+          </div>
           <h2 className="mb-4 text-3xl font-bold">Loan Questions</h2>
-          <div className="mb-8 max-w-5xl">{loanQuestionsItems}</div>
+          <div className="mb-8 max-w-5xl">
+            <div className="">{loanQuestionsItems}</div>
+          </div>
         </Container>
       </section>
     </div>

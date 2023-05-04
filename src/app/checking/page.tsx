@@ -7,6 +7,7 @@ function page() {
   return (
     <>
       <InnerHero>
+        {/* test */}
         <HeroSubHeading text="members first" />
         <PrimaryHeading headingText="Telco Plus" />
         <p className="">Telco Plus is a great company</p>
